@@ -1,0 +1,1 @@
+export const employeeDepartment = ["Finance", "Procurement", "Admin", "HR", "Operations", "Executive"]

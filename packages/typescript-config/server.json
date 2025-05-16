@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Server",
+    "extends": "./base.json",
+    "ts-node": {
+      "compilerOptions": {
+        "module": "commonjs"
+      }
+    },
+    "compilerOptions": {
+      "target": "es6",
+      "noEmit": false,
+      "module": "commonjs",
+      "sourceMap": true,
+      "composite": true
+    }
+  }
+  

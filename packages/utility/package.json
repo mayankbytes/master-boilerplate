@@ -1,0 +1,36 @@
+{
+  "name": "@mb/utility",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/src/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./src/*": "./dist/src/*.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/multer": "1.4.7",
+    "eslint": "^8.43.0",
+    "eslint-config-custom": "*",
+    "jest": "^26.6.3",
+    "typescript": "^4.5.3"
+  }
+}
