@@ -1,0 +1,27 @@
+{
+  "name": "@mb/auth-middleware",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/src/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./src/*": "./dist/src/*.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {}
+}

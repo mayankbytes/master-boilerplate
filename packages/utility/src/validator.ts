@@ -7,7 +7,7 @@ export default (req: Request, res: Response, next: NextFunction) => {
     return next()
   }
 
-  return res.status(400).json({
+   res.status(400).json({
     data: null,
     errors: errors.mapped(),
     message: "",

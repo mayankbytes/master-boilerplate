@@ -8,3 +8,16 @@ export const ROLES = {
   ADMIN: 2,
   USER: 3,
 };
+
+export const PLAN_LIMIT_TYPE = {
+  API_COUNT: "api_count",
+  FILE_SIZE_COUNT: "file_size_count",
+  USER_COUNT: "user_count",
+}
+
+
+export const USER_STATUS = {
+  ACTIVE: "Active",
+  PENDING: "Pending",
+  INACTIVE: "Inactive",
+}

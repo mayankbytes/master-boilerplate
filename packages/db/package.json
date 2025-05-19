@@ -1,0 +1,38 @@
+{
+  "name": "@mb/db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/src/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./src/*": "./dist/src/*.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express-session": "^1.18.1",
+    "@types/morgan": "^1.9.9",
+    "@types/pg": "^8.15.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express-session": "^1.18.1",
+    "google-auth-library": "^9.15.1",
+    "kysely": "^0.28.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {}
+}

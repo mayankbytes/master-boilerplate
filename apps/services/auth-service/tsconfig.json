@@ -1,0 +1,14 @@
+{
+  "extends": "@mb/typescript-config/server.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../../../packages/auth-middleware" },
+    { "path": "../../../packages/utility" }
+  ],
+  "include": ["src/"],
+  "exclude": ["node_modules", ".turbo", "coverage", "dist", "src/**/*.test.ts"]
+}
+
