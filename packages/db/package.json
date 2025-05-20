@@ -18,14 +18,18 @@
     "clean": "rm -rf dist",
     "dev": "tsc -w",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "migration": "dotenv -e ../../.env ts-node ./src/execute-migrations.ts",
+    "seeder": "dotenv -e ../../.env ts-node src/seeder/seeder.ts"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.18",
     "@types/express-session": "^1.18.1",
     "@types/morgan": "^1.9.9",
     "@types/pg": "^8.15.2",
+    "axios": "^1.9.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express-session": "^1.18.1",
