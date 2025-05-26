@@ -20,7 +20,7 @@
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
     "test": "jest --coverage",
     "migration": "dotenv -e ../../.env ts-node ./src/execute-migrations.ts",
-    "seeder": "dotenv -e ../../.env ts-node src/seeder/seeder.ts"
+    "seeder": "dotenv -e ../../.env ts-node src/seeders/seeders.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^9.8.0",
