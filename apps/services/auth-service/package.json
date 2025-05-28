@@ -1,20 +1,16 @@
 {
-    "name": "@og-zero/auth-service",
-    "version": "0.0.0",
-    "private": true,
-    "scripts": {
-      "build": "tsc -b",
-      "clean": "rm -rf dist",
-      "dev": "yarn build && dotenv nodemon  ./dist/src/index.js",
-      "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
-      "start": "node -r esbuild-register ./src/index.ts",
-      "test": "jest --coverage"
-    },
-    "dependencies": {
-     
-    },
-    "devDependencies": {
-     
-    }
-  }
-  
+ "name": "@og-zero/auth-service",
+ "version": "0.0.0",
+ "private": true,
+ "scripts": {
+  "build": "tsc -b",
+  "clean": "rm -rf dist",
+  "dev": "yarn build && dotenv -e ../../../.env nodemon ./dist/src/index.js",
+  "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
+  "start": "node -r esbuild-register ./src/index.ts",
+  "test": "jest --coverage"
+ },
+ "dependencies": {
+ },
+ "devDependencies": {}
+}
