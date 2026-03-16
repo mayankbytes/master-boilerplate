@@ -14,3 +14,4 @@ export const serverConfig = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
 ];
+  ``
